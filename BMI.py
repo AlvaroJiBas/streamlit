@@ -1,6 +1,7 @@
 import streamlit as st
-st.title("🚵BMI tracker")
 import pandas as pd
+st.title("🚵BMI tracker")
+
 if 'data' not in st.session_state:
      st.session_state['data']= pd.DataFrame(pd.read_csv("BMI.csv"))
 weight = st.number_input("Enter your weight (kg)",min_value=1,value=50)

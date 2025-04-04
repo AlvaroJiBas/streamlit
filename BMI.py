@@ -10,7 +10,7 @@ if st.button("Calculate your BMI", type="primary" ):
     new_row = {"weight" : weight, "height" : height, "BMI" : BMI}
     st.session_state['data'] = pd.concat([st.session_state['data'], pd.DataFrame([new_row])], ignore_index=True)
     dataframe =pd.DataFrame( st.session_state['data'])
-    dataframe.to_csv("workout.csv")
+    dataframe.to_csv("BMI.csv")
     st.success(f"Your BMI is: {BMI}")
     st.write("✌️ BMI recor saved")
 st.subheader("🏋️‍♀️BMI progress")

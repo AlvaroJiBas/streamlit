@@ -16,3 +16,5 @@ if st.button("Calculate your BMI", type="primary" ):
     st.write("✌️ BMI recor saved")
 st.subheader("🏋️‍♀️BMI progress")
 st.line_chart(st.session_state['data'], y="BMI")
+
+st.session_state['data']
